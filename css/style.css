@@ -3,15 +3,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
 }
-.logo h1{
+.logo h1 a{
     font-weight: bold;
+    color: rgb(33, 232, 33);
+    text-decoration: none;
 }
 nav ul{
     display: flex;
@@ -26,7 +33,7 @@ nav ul li a{
     color: rgb(123, 122, 122);
     
 }
-.busBtn button{
+.busBtn a{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,8 +45,10 @@ nav ul li a{
     font-weight: bold;
     font-size: 15px;
     cursor: pointer;
+    text-decoration: none;
+
 }
-.busBtn button img{
+.busBtn a img{
     padding-left: 7px;
 }
 main{
@@ -51,6 +60,7 @@ main{
 .banner {
     /* position: absolute; */
     /* padding: 0 100px; */
+    /* margin-top: 100px; */
     text-align: center;
 }
 .banner .bannerImg{
@@ -271,7 +281,7 @@ main{
     display: flex;
     justify-content: space-between;
 } 
-.seatIcon .available , .seatIcon .selected{
+.seatIcon .available , .seatIcon .selectedSeat{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -289,6 +299,13 @@ main{
     align-items: center;
     padding: 0 20px;
 }
+/* class for js */
+.selected{
+    background-color: rgb(5, 202, 14) !important;
+    color: white;
+    font-weight: bold;
+}
+/* class for js */
 .busSeat ul li{
     padding: 12px 0px;
     border-radius: 10px;
@@ -297,7 +314,15 @@ main{
     list-style: none;
     width: 100px;
     cursor: pointer;
-    background-color: rgb(241, 241, 241);
+    background: rgb(241, 241, 241);
+}
+
+#selectedSeatCount{
+    color: white;
+    background-color: rgb(9, 207, 9); 
+    padding: 0 7px; 
+    border-radius: 10px; 
+    font-size: 12px;
 }
 
 .calculateTicketPrice{
@@ -320,6 +345,13 @@ main{
     display: flex;
     justify-content: space-between;
 }
+
+.selectedSeatDetils{
+    display: flex; 
+    justify-content: space-between;
+    padding: 10px 0 10px 20px;
+}
+
 .totalPrice{
     display: flex;
     justify-content: space-between;
@@ -337,13 +369,14 @@ main{
     width: 100%;
     /* position: absolute; */
 }
-.inputCupon a{
+.inputCupon p{
     padding: 7px 17px;
     border: none;
     background-color: rgb(13, 199, 13);
     border-radius: 12px;
     color: white;
     text-decoration: none;
+    cursor: pointer;
     position: absolute;
     right: 5px;
     top: 7px;
@@ -378,7 +411,58 @@ main{
     border: none;
     background-color: rgb(30, 206, 7);
     border-radius: 15px;
+    cursor: pointer;
 }
+
+/* popUp for user details */
+.popUp{
+    background-color: white;
+    width: 400px;
+    border-radius: 7px;
+    position: fixed;
+    top: 50%;
+    z-index: 9999;
+    left: 50%;
+    padding: 0;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+    /* add this class with js for showing the popup  */
+.openPopUp{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+#popUp img{
+    width: 80px;
+    margin-top: -40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+#popUp h2{
+    font-size: 28px;
+    font-weight: 500;
+}
+#popUp p{
+    font-size: 16px;
+    margin: 10px;
+    padding: 0 20px;
+}
+#popUp #okBtn{
+    width: 90%;
+    padding: 7px;
+    margin: 20px 0 10px 0;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(50, 183, 50);
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+}
+/* popUp for user details */
 
 .termsAndPolicy{
     display: flex;

@@ -9,29 +9,29 @@
 <body>
     <header>
         <div class="logo">
-            <h1>R.H.-Ticket</h1>
+            <h1><a href="#home">RH - Ticket</a></h1>
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Destination</a></li>
-                <li><a href="#">Ticket</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#destination">Destination</a></li>
+                <li><a href="#selectYourSeat">Ticket</a></li>
             </ul>
         </nav>
         <div class="busBtn">
-            <button>Bus <img src="images/bus-icon.png" alt="bus-icon"></button>
+            <a href="#selectYourSeat">Bus <img src="images/bus-icon.png" alt="bus-icon"></a>
         </div>
     </header>
 
-    <main>
+    <main id="home">
         <!-- banner -->
         <div class="banner">
             <img src="images/banner.png" alt="bannerImg" class="bannerImg">
             <div class="bannerText">
                 <h1>End-to-End Travel with <br><span>R.H. Paribahan</span></h1>
                 <p>Yes, you can run unit tests and view the results directly    within the app. The integrated testing features allow for a streamlined .</p>
-                <button><a href="#">Buy Tickets</a></button>
+                <button><a href="#selectYourSeat">Buy Tickets</a></button>
             </div>
         </div>
         <!-- banner Down Boxes -->
@@ -95,7 +95,7 @@
         </div>
     </main>
 
-    <section class="buyTicketSection">
+    <section id="destination" class="buyTicketSection">
         <!-- Buy Ticket Section -->
         <div class="buyTicketSectionInside">
             <div class="buyTicketSectionTitle">
@@ -150,7 +150,8 @@
         </div>
 
         <!-- select your seat  -->
-        <section class="selectYourSeat">
+        <section id="selectYourSeat" class="selectYourSeat">
+            
             <div class="selectYourSeatLeft">
                 <h2>Select your seat</h2>
                 <p style="color: rgb(161, 161, 161); ">-------------------------------------------------------------------------------------------------------------</p>
@@ -159,86 +160,83 @@
                         <img src="images/seat-gray.png" alt="">
                         <p>Available</p>
                     </div>
-                    <div class="selected">
+                    <div class="selectedSeat">
                         <img src="images/seat-green-filled.png" alt="">
                         <p>Selected</p>
                     </div>
                 </div>
                 <p style="color: rgb(161, 161, 161); ">-------------------------------------------------------------------------------------------------------------</p>
-                <!-- <div class="selectYourSeatWheel">
-
-                </div> -->
 
                 <div class="busSeat">
                     <ul>
                         <p>A</p>
-                        <li>A1</li>
-                        <li>A2</li>
-                        <li>A3</li>
-                        <li>A4</li>
+                        <li class="seat">A1</li>
+                        <li class="seat">A2</li>
+                        <li class="seat">A3</li>
+                        <li class="seat">A4</li>
                     </ul>
                     <ul>
                         <p>B</p>
-                        <li>B1</li>
-                        <li>B2</li>
-                        <li>B3</li>
-                        <li>B4</li>
+                        <li class="seat">B1</li>
+                        <li class="seat">B2</li>
+                        <li class="seat">B3</li>
+                        <li class="seat">B4</li>
                     </ul>
                     <ul>
                         <p>C</p>
-                        <li>C1</li>
-                        <li>C2</li>
-                        <li>C3</li>
-                        <li>C4</li>
+                        <li class="seat">C1</li>
+                        <li class="seat">C2</li>
+                        <li class="seat">C3</li>
+                        <li class="seat">C4</li>
                     </ul>
                     <ul>
                         <p>D</p>
-                        <li>D1</li>
-                        <li>D2</li>
-                        <li>D3</li>
-                        <li>D4</li>
+                        <li class="seat">D1</li>
+                        <li class="seat">D2</li>
+                        <li class="seat">D3</li>
+                        <li class="seat">D4</li>
                     </ul>
                     <ul>
                         <p>E</p>
-                        <li>E1</li>
-                        <li>E2</li>
-                        <li>E3</li>
-                        <li>E4</li>
+                        <li class="seat">E1</li>
+                        <li class="seat">E2</li>
+                        <li class="seat">E3</li>
+                        <li class="seat">E4</li>
                     </ul>
                     <ul>
                         <p>F</p>
-                        <li>F1</li>
-                        <li>F2</li>
-                        <li>F3</li>
-                        <li>F4</li>
+                        <li class="seat">F1</li>
+                        <li class="seat">F2</li>
+                        <li class="seat">F3</li>
+                        <li class="seat">F4</li>
                     </ul>
                     <ul>
                         <p>G</p>
-                        <li>G1</li>
-                        <li>G2</li>
-                        <li>G3</li>
-                        <li>G4</li>
+                        <li class="seat">G1</li>
+                        <li class="seat">G2</li>
+                        <li class="seat">G3</li>
+                        <li class="seat">G4</li>
                     </ul>
                     <ul>
                         <p>H</p>
-                        <li>H1</li>
-                        <li>H2</li>
-                        <li>H3</li>
-                        <li>H4</li>
+                        <li class="seat">H1</li>
+                        <li class="seat">H2</li>
+                        <li class="seat">H3</li>
+                        <li class="seat">H4</li>
                     </ul>
                     <ul>
                         <p>I</p>
-                        <li>I1</li>
-                        <li>I2</li>
-                        <li>I3</li>
-                        <li>I4</li>
+                        <li class="seat">I1</li>
+                        <li class="seat">I2</li>
+                        <li class="seat">I3</li>
+                        <li class="seat">I4</li>
                     </ul>
                     <ul>
                         <p>J</p>
-                        <li>J1</li>
-                        <li>J2</li>
-                        <li>J3</li>
-                        <li>J4</li>
+                        <li class="seat">J1</li>
+                        <li class="seat">J2</li>
+                        <li class="seat">J3</li>
+                        <li class="seat">J4</li>
                     </ul>
                 </div>
             </div>
@@ -250,48 +248,55 @@
 
                 <div class="calculateTicketPrice">
                     <div class="thead">
-                        <p>Seat <span style="color: white; background-color: rgb(9, 207, 9); padding: 0 7px; border-radius: 10px; font-size: 12px;">2</span></p>
+                        <p>Seat <span id="selectedSeatCount">0</span></p>
                         <p>Class</p>
                         <p>Price</p>
                     </div>
                     <p style="color: rgb(161, 161, 161); ">----------------------------------------------------------------</p>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>F1</td>
-                                <td>Economy</td>
-                                <td>550</td>
-                            </tr>
-                            <tr>
-                                <td>F2</td>
-                                <td>Economy</td>
-                                <td>550</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="tbody">
+                <!-- Selected seat details will be appended here -->
+                    </div>    
                     <hr>
+
+                    <!-- popUp for user details -->
+                        <div id="popUp" class="popUp">
+                            <img src="images/popUpBus.jpg" alt="Tick">
+                            <h2>Thank You <span id="popUpUserName"></span>!</h2>
+                            <p>Your ticket has been booked successfully.</p>
+                            <p>Your seat is : <span id="popUpSeatNumber" style="font-weight: 600;"></span>, Class : <span id="popUpClassName" style="font-weight: 600;"></span>, Total : <span id="popUpTotal" style="font-weight: 600;"></span> BDT.</p>
+
+                            <div class="phoneAndEmil" style="font-size: 12px; color: rgb(148, 148, 148); margin-top: 20px;">
+                                <div>Check your email : <span id="checkEmil"> </span> </div>
+                                <div>Or</div>
+                                <div>Check your phone number : <span id="checkPhone"> </span></div>
+                            </div>
+                            <button id="okBtn">OK</button>
+                        </div>
+                    <!-- popUp for user details -->
+
+
                     <div class="totalPrice">
                         <h5>Total Price</h5>
-                        <h5>BDT <span>1100</span></h5>
+                        <h5>BDT <span id="totalPrice">00</span></h5>
                     </div>
                     <div class="inputCupon">
-                        <input type="text" placeholder="Have you any cupon?">
-                        <a href="#">Apply</a>
+                        <input id="cupon" type="text" placeholder="Have you any cupon?">
+                        <p id="applyCupon">Apply</p>
                     </div>
                     <div class="grandTotalPrice">
                         <h5>Grand Total</h5>
-                        <h5>BDT <span>1100</span></h5>
+                        <h5>BDT <span id="grandTotalPrice">00</span></h5>
                     </div>
                 </div>
 
                 <div class="passengerDetails">
                     <label for="">Passenger Name*</label><br>
-                    <input type="text" placeholder="Enter Your Name"><br>
+                    <input id="userName" type="text" placeholder="Enter Your Name"><br>
                     <label for="">Phone Number*</label><br>
-                    <input type="text" placeholder="Enter Your Phone number"><br>
+                    <input id="phoneNumber" type="text" placeholder="Enter Your Phone number"><br>
                     <label for="">Email ID</label><br>
-                    <input type="email" placeholder="Enter Your Email">
-                    <button>Next</button>
+                    <input id="emailAddress" type="email" placeholder="Enter Your Email">
+                    <button id="purchaseTicket">Next</button>
                 </div> 
 
                 <div class="termsAndPolicy">
@@ -304,7 +309,7 @@
     </section>
 
     
-    <footer>
+    <footer id="about">
         <div class="footerTop">
             <div class="footerTopLeft">
                 <h2>R.H. Paribahan</h2>
